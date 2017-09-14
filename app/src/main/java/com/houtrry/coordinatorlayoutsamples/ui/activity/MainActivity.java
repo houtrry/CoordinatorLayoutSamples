@@ -1,12 +1,11 @@
-package com.houtrry.coordinatorlayoutsamples;
+package com.houtrry.coordinatorlayoutsamples.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.houtrry.coordinatorlayoutsamples.ui.activity.Main14Activity;
-import com.houtrry.coordinatorlayoutsamples.ui.activity.Main15Activity;
+import com.houtrry.coordinatorlayoutsamples.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -76,5 +75,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void test15(View view) {
         startAty(Main15Activity.class);
+    }
+
+    public void test16(View view) {
+        startAty(Main16Activity.class);
+    }
+
+    public void test17(View view) {
+        startAty(Main17Activity.class);
     }
 }

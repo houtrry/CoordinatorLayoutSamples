@@ -66,7 +66,7 @@ public class Main14Activity extends AppCompatActivity {
     }
 
     private void initToolBar() {
-        mToolbar.setTitle("仿知乎效果");
+        mToolbar.setTitle("仿知乎效果--快速返回");
         mToolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(mToolbar);
     }

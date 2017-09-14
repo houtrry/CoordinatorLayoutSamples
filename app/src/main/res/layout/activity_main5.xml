@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.houtrry.coordinatorlayoutsamples.Main5Activity">
+    tools:context="com.houtrry.coordinatorlayoutsamples.ui.activity.Main5Activity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"

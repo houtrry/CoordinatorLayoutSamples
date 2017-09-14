@@ -1,10 +1,12 @@
-package com.houtrry.coordinatorlayoutsamples;
+package com.houtrry.coordinatorlayoutsamples.ui.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+
+import com.houtrry.coordinatorlayoutsamples.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

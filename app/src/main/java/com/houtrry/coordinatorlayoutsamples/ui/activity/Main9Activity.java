@@ -1,8 +1,10 @@
-package com.houtrry.coordinatorlayoutsamples;
+package com.houtrry.coordinatorlayoutsamples.ui.activity;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
+
+import com.houtrry.coordinatorlayoutsamples.R;
 
 public class Main9Activity extends AppCompatActivity {
 

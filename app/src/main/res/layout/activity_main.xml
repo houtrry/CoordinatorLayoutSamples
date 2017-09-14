@@ -136,6 +136,24 @@
             android:textColor="@color/colorAccent"
             android:textAllCaps="false"
             android:onClick="test15"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结合ViewPager和ToolBar"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test16"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿知乎效果--个人详情"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test17"/>
     </LinearLayout>
 
 </ScrollView>

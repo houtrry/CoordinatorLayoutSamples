@@ -1,4 +1,4 @@
-package com.houtrry.coordinatorlayoutsamples;
+package com.houtrry.coordinatorlayoutsamples.ui.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.houtrry.coordinatorlayoutsamples.R;
 import com.houtrry.coordinatorlayoutsamples.adapter.CustomAdapter;
 
 import java.util.ArrayList;

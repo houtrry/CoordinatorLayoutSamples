@@ -1,4 +1,4 @@
-package com.houtrry.coordinatorlayoutsamples;
+package com.houtrry.coordinatorlayoutsamples.ui.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.houtrry.coordinatorlayoutsamples.R;
 import com.houtrry.coordinatorlayoutsamples.adapter.CustomAdapter;
 
 import java.lang.ref.WeakReference;

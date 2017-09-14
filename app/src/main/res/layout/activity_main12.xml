@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.houtrry.coordinatorlayoutsamples.Main12Activity">
+    tools:context="com.houtrry.coordinatorlayoutsamples.ui.activity.Main12Activity">
 
     <Button
         android:id="@+id/btnShowBottomSheetDialog"

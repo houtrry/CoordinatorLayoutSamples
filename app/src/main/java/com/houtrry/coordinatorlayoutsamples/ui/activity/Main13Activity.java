@@ -1,4 +1,4 @@
-package com.houtrry.coordinatorlayoutsamples;
+package com.houtrry.coordinatorlayoutsamples.ui.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
+import com.houtrry.coordinatorlayoutsamples.R;
 import com.houtrry.coordinatorlayoutsamples.adapter.CustomAdapter;
 import com.houtrry.coordinatorlayoutsamples.utils.AnimateUtiils;
 
