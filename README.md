@@ -1,2 +1,2 @@
-#CoordinatorlayoutDemo
+#CoordinatorlayoutSamples
 Coordinatorlayout的简单使用.
