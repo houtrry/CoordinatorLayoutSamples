@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.houtrry.coordinatorlayoutsamples.Main9Activity">
+
+    <ImageView
+        android:id="@+id/depentent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@mipmap/ic_launcher_round"
+        android:contentDescription="主动移动的View"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你让我动我就动啊, 那岂不是很没面子"
+        android:textSize="16sp"
+        android:layout_gravity="right"
+        app:layout_behavior="com.houtrry.coordinatorlayoutdemo.behavior.DependentBehavior"
+        android:textColor="@color/colorAccent"/>
+
+</android.support.design.widget.CoordinatorLayout>

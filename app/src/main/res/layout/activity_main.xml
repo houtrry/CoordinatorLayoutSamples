@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test01"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试带RecyclerView"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test02"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试Toolbar"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test03"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试AppBarLayout"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test05"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试CollapsingToolbarLayout"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test06"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试CollapsingToolbarLayout+RecyclerView"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test07"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试SnackBar和FloatingActionButton"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test08"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试Behavior"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test09"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试Behavior滑动"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test10"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试bottom_sheet_behavior"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test11"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试BottomSheetDialog"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test12"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试返回顶部"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test13"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿知乎效果"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test14"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结合ViewPager"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test15"/>
+    </LinearLayout>
+
+</ScrollView>

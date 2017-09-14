@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CoordinatorLayoutSamples</string>
+    <string name="behavior_scale_uparrow">com.houtrry.coordinatorlayoutsamples.behavior.ScaleUpArrowBehavior</string>
+    <string name="behavior_translationy_uparrow">com.houtrry.coordinatorlayoutsamples.behavior.TranslationYUpArrowBehavior</string>
+</resources>
