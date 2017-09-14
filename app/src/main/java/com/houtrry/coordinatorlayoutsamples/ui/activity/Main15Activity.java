@@ -47,6 +47,5 @@ public class Main15Activity extends AppCompatActivity {
     }
 
     private void initEvent() {
-
     }
 }
