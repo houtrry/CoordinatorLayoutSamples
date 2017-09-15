@@ -93,31 +93,28 @@ public class Main17Activity extends AppCompatActivity {
 
         final int dy = mCollapsingToolbarLayout.getScrimVisibleHeightTrigger() - mCollapsingToolbarLayout.getHeight();
         Log.d(TAG, "initEvent: dy: "+dy+", "+mCollapsingToolbarLayout.getScrimVisibleHeightTrigger()+"/"+mCollapsingToolbarLayout.getHeight());
-        mAppBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-            @Override
-            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                boolean change = verticalOffset < mDy;
-                Log.d(TAG, "onOffsetChanged:  "+verticalOffset+"/"+mDy);
-                if (verticalOffset == -mCollapsingToolbarLayout.getHeight() + mToolbar.getHeight()) {
-                    //toolbar is collapsed here
-                    //write your code here
-                    Log.d(TAG, "onOffsetChanged: 天啊噜, 折叠了折叠了!");
-                }
-                if (mAppBarLayoutEXPANDED != change) {
-                    if (mAppBarLayoutEXPANDED) {
-                        Log.d(TAG, "onOffsetChanged: 天啊噜, 展开了展开了!");
+        mAppBarLayout.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
+            boolean change = verticalOffset < mDy;
+            Log.d(TAG, "onOffsetChanged:  "+verticalOffset+"/"+mDy);
+            if (verticalOffset == -mCollapsingToolbarLayout.getHeight() + mToolbar.getHeight()) {
+                //toolbar is collapsed here
+                //write your code here
+                Log.d(TAG, "onOffsetChanged: 天啊噜, 折叠了折叠了!");
+            }
+            if (mAppBarLayoutEXPANDED != change) {
+                if (mAppBarLayoutEXPANDED) {
+                    Log.d(TAG, "onOffsetChanged: 天啊噜, 展开了展开了!");
 
-                        mHeaderImageView.setVisibility(View.VISIBLE);
-                        animate(false);
+                    mHeaderImageView.setVisibility(View.VISIBLE);
+                    animate(false);
 //                        mTabLayout.setBackgroundColor(Color.TRANSPARENT);
-                    } else {
-                        Log.d(TAG, "onOffsetChanged: 天啊噜, 折叠了折叠了!");
+                } else {
+                    Log.d(TAG, "onOffsetChanged: 天啊噜, 折叠了折叠了!");
 //                        mTabLayout.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
-                        mHeaderImageView.setVisibility(View.GONE);
-                        animate(true);
-                    }
-                    mAppBarLayoutEXPANDED = change;
+                    mHeaderImageView.setVisibility(View.GONE);
+                    animate(true);
                 }
+                mAppBarLayoutEXPANDED = change;
             }
         });
     }
@@ -141,14 +138,7 @@ public class Main17Activity extends AppCompatActivity {
                 : new LinearOutSlowInInterpolator());
         colorAnimation.setEvaluator(new ArgbEvaluator());
         colorAnimation.setDuration(mCollapsingToolbarLayout.getScrimAnimationDuration()); // milliseconds
-        colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-
-            @Override
-            public void onAnimationUpdate(ValueAnimator animator) {
-                mTabLayout.setBackgroundColor((int) animator.getAnimatedValue());
-            }
-
-        });
+        colorAnimation.addUpdateListener(animator -> mTabLayout.setBackgroundColor((int) animator.getAnimatedValue()));
         colorAnimation.start();
     }
 }
