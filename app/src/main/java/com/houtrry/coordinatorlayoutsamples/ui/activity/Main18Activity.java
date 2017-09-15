@@ -3,6 +3,7 @@ package com.houtrry.coordinatorlayoutsamples.ui.activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -30,6 +31,8 @@ public class Main18Activity extends AppCompatActivity {
     ViewPager mViewPager;
     @BindView(R.id.floatingActionButton)
     FloatingActionButton mFloatingActionButton;
+    @BindView(R.id.collapsingToolbarLayout)
+    CollapsingToolbarLayout mCollapsingToolbarLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,7 @@ public class Main18Activity extends AppCompatActivity {
 
     private void initToolBar() {
         mToolbar.setNavigationIcon(R.mipmap.icon_arrow_left);
+//        mToolbar.setTitleMarginStart(0);
         setSupportActionBar(mToolbar);
     }
 

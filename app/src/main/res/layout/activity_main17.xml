@@ -11,20 +11,25 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@mipmap/icon1"
         android:orientation="vertical">
 
         <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="?attr/actionBarSize"
+            android:minHeight="160dp"
+            app:contentScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:scrimVisibleHeightTrigger="180dp"
             app:statusBarScrim="@color/colorPrimaryDark"
-            app:layout_scrollFlags="scroll|enterAlways">
+            app:titleEnabled="false">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@mipmap/icon1"
-                app:layout_collapseMode="parallax"/>
+                app:layout_collapseMode="parallax"
+                android:background="@android:color/transparent"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -32,8 +37,8 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="@android:color/transparent"
                 android:title="仿知乎个人信息详情界面"
-                app:titleTextColor="@android:color/white"
-                app:layout_collapseMode="pin"/>
+                app:layout_collapseMode="pin"
+                app:titleTextColor="@android:color/white"/>
 
             <ImageView
                 android:id="@+id/headerImageView"
@@ -41,18 +46,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:src="@mipmap/ic_launcher_round"
-                app:layout_scrollFlags="scroll|enterAlways"
-                app:layout_behavior="@string/behavior_zhihu_persiondetail_image"/>
+                app:layout_behavior="@string/behavior_zhihu_persiondetail_image"
+                app:layout_scrollFlags="scroll|enterAlways"/>
 
-            <android.support.design.widget.TabLayout
-                android:id="@+id/tabLayout"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_gravity="bottom"
-                app:layout_scrollFlags="scroll"
-                app:layout_collapseMode="pin"
-                android:background="@android:color/transparent"/>
         </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            app:layout_scrollFlags="scroll"/>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager

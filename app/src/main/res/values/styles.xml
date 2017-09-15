@@ -8,4 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ExpandedTextAppearanceForCollapsingToolbarLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textSize20</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CollapsedTextAppearanceForCollapsingToolbarLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textSize14</item>
+        <item name="android:textColor">@android:color/holo_green_light</item>
+    </style>
+
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
 </resources>
