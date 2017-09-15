@@ -154,6 +154,15 @@
             android:textColor="@color/colorAccent"
             android:textAllCaps="false"
             android:onClick="test17"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewPager+Tablayout+AppBarLayout+CollapsingToolbarLayout+Toolbar"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test18"/>
     </LinearLayout>
 
 </ScrollView>
