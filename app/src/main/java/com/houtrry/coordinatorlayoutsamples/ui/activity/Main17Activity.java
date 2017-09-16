@@ -94,7 +94,7 @@ public class Main17Activity extends AppCompatActivity {
         final int dy = mCollapsingToolbarLayout.getScrimVisibleHeightTrigger() - mCollapsingToolbarLayout.getHeight();
         Log.d(TAG, "initEvent: dy: "+dy+", "+mCollapsingToolbarLayout.getScrimVisibleHeightTrigger()+"/"+mCollapsingToolbarLayout.getHeight());
         mAppBarLayout.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
-            boolean change = verticalOffset < mDy;
+            final boolean change = verticalOffset < mDy;
             Log.d(TAG, "onOffsetChanged:  "+verticalOffset+"/"+mDy);
             if (verticalOffset == -mCollapsingToolbarLayout.getHeight() + mToolbar.getHeight()) {
                 //toolbar is collapsed here
@@ -138,7 +138,10 @@ public class Main17Activity extends AppCompatActivity {
                 : new LinearOutSlowInInterpolator());
         colorAnimation.setEvaluator(new ArgbEvaluator());
         colorAnimation.setDuration(mCollapsingToolbarLayout.getScrimAnimationDuration()); // milliseconds
-        colorAnimation.addUpdateListener(animator -> mTabLayout.setBackgroundColor((int) animator.getAnimatedValue()));
+        colorAnimation.addUpdateListener(animator -> {
+            mTabLayout.setBackgroundColor((int) animator.getAnimatedValue());
+            mCollapsingToolbarLayout.setBackgroundColor((int) animator.getAnimatedValue());
+        });
         colorAnimation.start();
     }
 }
