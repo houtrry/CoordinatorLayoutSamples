@@ -163,6 +163,15 @@
             android:textColor="@color/colorAccent"
             android:textAllCaps="false"
             android:onClick="test18"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿知乎效果--专栏页"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="false"
+            android:onClick="test19"/>
     </LinearLayout>
 
 </ScrollView>

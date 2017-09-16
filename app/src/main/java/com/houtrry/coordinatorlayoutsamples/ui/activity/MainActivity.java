@@ -88,4 +88,8 @@ public class MainActivity extends AppCompatActivity {
     public void test18(View view) {
         startAty(Main18Activity.class);
     }
+
+    public void test19(View view) {
+        startAty(Main19Activity.class);
+    }
 }

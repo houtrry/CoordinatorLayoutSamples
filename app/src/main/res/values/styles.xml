@@ -18,6 +18,16 @@
         <item name="android:textColor">@android:color/holo_green_light</item>
     </style>
 
+    <style name="ExpandedTextZhuanlanAppearanceForCollapsingToolbarLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textSize20</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CollapsedZhuanlanTextAppearanceForCollapsingToolbarLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textSize16</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
     <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
         <item name="contentInsetStart">0dp</item>
         <item name="contentInsetStartWithNavigation">0dp</item>

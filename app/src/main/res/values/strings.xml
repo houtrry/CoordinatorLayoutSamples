@@ -3,4 +3,5 @@
     <string name="behavior_scale_uparrow">com.houtrry.coordinatorlayoutsamples.behavior.ScaleUpArrowBehavior</string>
     <string name="behavior_translationy_uparrow">com.houtrry.coordinatorlayoutsamples.behavior.TranslationYUpArrowBehavior</string>
     <string name="behavior_zhihu_persiondetail_image">com.houtrry.coordinatorlayoutsamples.behavior.ZhihuPersonDetailBehavior</string>
+    <string name="behavior_zhihu_zhuanlan">com.houtrry.coordinatorlayoutsamples.behavior.ZhihuZhuanlanBehavior</string>
 </resources>
