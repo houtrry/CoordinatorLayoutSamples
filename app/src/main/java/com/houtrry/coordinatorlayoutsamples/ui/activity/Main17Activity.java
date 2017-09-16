@@ -58,6 +58,7 @@ public class Main17Activity extends AppCompatActivity {
     private void initToolBar() {
         mToolbar.setTitle("仿知乎效果--个人详情");
         mToolbar.setTitleTextColor(Color.WHITE);
+        mToolbar.setNavigationOnClickListener(v -> finish());
         mToolbar.setNavigationIcon(R.mipmap.icon_arrow_left);
         setSupportActionBar(mToolbar);
     }

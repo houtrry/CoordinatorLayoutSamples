@@ -20,7 +20,6 @@
             android:background="@android:color/holo_blue_light"
             app:collapsedTitleGravity="left"
             app:collapsedTitleTextAppearance="@style/CollapsedZhuanlanTextAppearanceForCollapsingToolbarLayout"
-            app:contentScrim="@android:color/transparent"
             app:expandedTitleGravity="center"
             app:expandedTitleTextAppearance="@style/ExpandedTextZhuanlanAppearanceForCollapsingToolbarLayout"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"

@@ -62,6 +62,7 @@ public class Main19Activity extends AppCompatActivity {
     private void initToolBar() {
         mToolbar.setTitle("仿知乎专栏页");
         mToolbar.setNavigationIcon(R.mipmap.icon_arrow_left);
+        mToolbar.setNavigationOnClickListener(v -> finish());
         setSupportActionBar(mToolbar);
     }
 
@@ -114,12 +115,13 @@ public class Main19Activity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mAppBarLayout.removeOnOffsetChangedListener(mOnOffsetChangedListener);
+        mHeaderImageView.animate().cancel();
+        mLlAttentions.animate().cancel();
     }
 
     private void animate(boolean isGone) {
         mHeaderImageView.animate().cancel();
         mLlAttentions.animate().cancel();
-
         mHeaderImageView.animate().setDuration(mCollapsingToolbarLayout.getScrimAnimationDuration()).alpha(isGone?0.0f:1.0f).start();
         mLlAttentions.animate().setDuration(mCollapsingToolbarLayout.getScrimAnimationDuration()).alpha(isGone?0.0f:1.0f).start();
     }
