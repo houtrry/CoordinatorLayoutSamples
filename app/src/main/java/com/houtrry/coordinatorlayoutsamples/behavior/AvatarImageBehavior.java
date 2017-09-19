@@ -23,6 +23,7 @@ public class AvatarImageBehavior extends CoordinatorLayout.Behavior<CircleImageV
 
     private static final String TAG = AvatarImageBehavior.class.getSimpleName();
 
+    private float mFinalX = 50f;
     public AvatarImageBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -32,15 +33,18 @@ public class AvatarImageBehavior extends CoordinatorLayout.Behavior<CircleImageV
         return dependency instanceof Toolbar;
     }
 
+
     @Override
     public boolean onDependentViewChanged(CoordinatorLayout parent, CircleImageView child, View dependency) {
         Log.d(TAG, "onDependentViewChanged: ("+dependency.getX()+", "+dependency.getY()+") === ("+child.getX()+", "+child.getY()+")");
         final float dependencyY = dependency.getY();
         final float childY = child.getY();
+        Log.d(TAG, "onDependentViewChanged: "+childY+"/"+dependencyY);
         if (childY > 50) {
-            child.setY(dependency.getY() - child.getMeasuredHeight() * 0.5f);
+            child.setY(dependencyY - child.getMeasuredHeight() * 0.5f);
         } else {
-            child.setX();
+
+            child.setX(child.getX());
         }
         return true;
     }
