@@ -44,6 +44,7 @@ public class AvatarImageBehavior extends CoordinatorLayout.Behavior<CircleImageV
             child.setY(dependencyY - child.getMeasuredHeight() * 0.5f);
         } else {
 
+            float precent = dependencyY/50f;
             child.setX(child.getX());
         }
         return true;
