@@ -96,6 +96,7 @@ public class Main17Activity extends AppCompatActivity {
         Log.d(TAG, "initEvent: dy: "+dy+", "+mCollapsingToolbarLayout.getScrimVisibleHeightTrigger()+"/"+mCollapsingToolbarLayout.getHeight());
         mAppBarLayout.addOnOffsetChangedListener((appBarLayout, verticalOffset) -> {
             final boolean change = verticalOffset < mDy;
+//            final boolean change = Math.abs(verticalOffset)/mAppBarLayout.getTotalScrollRange() > 0.5f;
             Log.d(TAG, "onOffsetChanged:  "+verticalOffset+"/"+mDy);
             if (verticalOffset == -mCollapsingToolbarLayout.getHeight() + mToolbar.getHeight()) {
                 //toolbar is collapsed here

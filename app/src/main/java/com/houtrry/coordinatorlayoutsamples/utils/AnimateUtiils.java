@@ -29,7 +29,20 @@ public class AnimateUtiils {
 
     public static void translationYWithAlpha(View view, float translationY, long duration, ViewPropertyAnimatorListener listener) {
         ViewCompat.animate(view).cancel();
-        ViewCompat.animate(view).translationY(translationY).alpha(translationY == 0?1.0f:0.0f)
+        ViewCompat.animate(view).translationY(translationY).alpha(translationY == 0 ? 1.0f : 0.0f)
+                .setInterpolator(ACCELERATE_DECELERATE).setDuration(duration)
+                .setListener(listener).start();
+    }
+
+    public static void alpha(View view, float alpha, long duration) {
+        ViewCompat.animate(view).cancel();
+        ViewCompat.animate(view).alpha(alpha)
+                .setInterpolator(ACCELERATE_DECELERATE).setDuration(duration).start();
+    }
+
+    public static void alpha(View view, float alpha, long duration, ViewPropertyAnimatorListener listener) {
+        ViewCompat.animate(view).cancel();
+        ViewCompat.animate(view).alpha(alpha)
                 .setInterpolator(ACCELERATE_DECELERATE).setDuration(duration)
                 .setListener(listener).start();
     }
